@@ -27,6 +27,7 @@ urlpatterns = [
     path('registrar_editorial/', views.crear_carrera, name='crear_carrera'),
     path('eliminar_editorial/<int:carrera_id>/', views.eliminar_carrera, name='eliminar_carrera'),
     path('editar_editorial/<int:carrera_id>/', views.editar_carrera, name='editar_carrera'),
+    path('integrantes/',views.integrantes, name = "integrantes"),
 
 ]
 

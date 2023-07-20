@@ -102,3 +102,7 @@ def editar_carrera(request, carrera_id):
         return redirect('carreras')
 
     return render(request, 'editar_carrera.html', {'carrera': carrera})
+
+def integrantes(request):
+    return render(request,'integrantes.html',{
+})
