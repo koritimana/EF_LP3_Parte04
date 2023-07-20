@@ -1,11 +1,14 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8" />
     <title>{% block title %}{% endblock %}</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/esti.css' %}" />
 </head>
+
 <body>
     <header>
         <div id="logotipo">
@@ -13,18 +16,18 @@
         </div>
     </header>
     <nav>
-        <ul>
-            <li>
-                <a href="{% url 'inicio' %}"><h2>Países</h2></a>
+        <ul >
+            <li >
+                <a  href="{% url 'cursos' %}"><h2>Listado Paises</h2></a>
             </li>
             <li>
-                <a href="{% url 'registrar_pais' %}"><h2>Registrar País</h2></a>
+                <a href="{% url 'crear_curso' %}"><h2>Registrar Pais</h2></a>
             </li>
             <li>
-                <a href="{% url 'editorial' %}"><h2>Editoriales</h2></a>
+                <a href="{% url 'carreras' %}"><h2>Editorial</h2></a>
             </li>
             <li>
-                <a href="{% url 'crear_editorial' %}"><h2>Crear Editorial</h2></a>
+                <a href="{% url 'crear_carrera' %}"><h2>Crear Editorial</h2></a>
             </li>
         </ul>
     </nav>
@@ -40,7 +43,7 @@
         </div>
     </div>
     <footer>
-        UNTELS - Lenguaje de Programación III &copy; Guillen - Montes - Timana {% now "d/m/Y h:m:s" %}
+        UNTELS - Lenguaje de Programación III &copy; Guillen Ayala - Timana Espinoza - Montes Palacios {% now "d/m/Y h:m:s" %}
     </footer>
 </body>
 </html>

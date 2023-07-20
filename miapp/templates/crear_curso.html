@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Registrar Pais</h1>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="code">IDPais:</label>
+        <input type="text" name="code" id="code">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+        <label for="credits">Poblacion:</label>
+        <input type="number" name="credits" id="credits">
+        <label for="state">State:</label>
+        <select name="state">
+            <option value="1"> Si </option>
+            <option value="0"> No </option>
+        </select>
+        <input type="submit" value="Agregar Pais">
+    </form>
+{% endblock %}

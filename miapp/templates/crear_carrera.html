@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>Registrar Editorial</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="shortname">URL: </label>
+        <input type="text" id="shortname" name="shortname" required><br>
+        <label for="image">Imagen:</label>
+        <input type="file" id="image" name="image"><br>
+        <label for="state">Estado:</label>
+        <select name="state">
+            <option value="1"> Si </option>
+            <option value="0"> No </option>
+        </select>
+        <input type="submit" value="Registrar">
+    </form>
+{% endblock %}

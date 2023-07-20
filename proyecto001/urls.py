@@ -19,9 +19,19 @@ from django.urls import path
 from miapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name = "index"),
-    path('inicio/', views.index, name = "inicio"),
-    path('registrar_pais/',views.registrar_pais,name="registrar_pais"),
-    path('editorial/',views.editorial, name = "editorial"),
-    path('crear_editorial/',views.crear_editorial, name = "crear_editorial"),
+    path('', views.inicio, name = "inicio"),
+    path('listado_paises/', views.cursos, name='cursos'),
+    path('registrar_paises/', views.crear_curso, name='crear_curso'),
+    path('eliminar_paises/<int:curso_id>/', views.eliminar_curso, name='eliminar_curso'),
+    path('listado_editorial/', views.listar_carreras, name='carreras'),
+    path('registrar_editorial/', views.crear_carrera, name='crear_carrera'),
+    path('eliminar_editorial/<int:carrera_id>/', views.eliminar_carrera, name='eliminar_carrera'),
+    path('editar_editorial/<int:carrera_id>/', views.editar_carrera, name='editar_carrera'),
+
 ]
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

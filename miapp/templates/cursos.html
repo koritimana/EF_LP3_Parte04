@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Listado de Paises</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Paises</title>
+</head>
+<body>
+    <div class="listacurso">
+        <ul>
+        {% for curso in cursos %}
+        <li>
+            {{ curso.name }} (IDPais: {{ curso.code }}) - Poblacion: {{ curso.credits }}- State: {{ curso.state }}
+            <a href="{% url 'eliminar_curso' curso.id %}">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
+{% endblock %}

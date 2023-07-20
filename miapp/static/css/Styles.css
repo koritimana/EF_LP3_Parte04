@@ -1,0 +1,229 @@
+/* Estilos para el nav */
+nav {
+    background-color: rgb(64, 32, 206);
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el logotipo */
+#logotipo {
+    text-align: center;
+    margin: 20px;
+}
+
+#logotipo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la barra */
+.barra {
+    background-color: #333;
+    height: 10px;
+}
+
+/* Estilos para el contenido */
+#content {
+    margin: 20px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    color: red;
+}
+
+/* Estilos específicos del formulario */
+form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+.listacurso {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Colores personalizados para los estados */
+.estado-activo {
+    color: green;
+}
+
+.estado-inactivo {
+    color: green;
+}
+
+
+ table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .no-image {
+        color: #aaa;
+        font-style: italic;
+    }
+
+    .actions {
+        white-space: nowrap;
+    }
+
+    .actions a {
+        margin-right: 8px;
+    }

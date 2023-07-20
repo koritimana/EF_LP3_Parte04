@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Listado de Editoriales</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>URL</th>
+            <th>Imagen</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        {% for carrera in carreras %}
+        <tr>
+            <td>{{ carrera.name }}</td>
+            <td>{{ carrera.shortname }}</td>
+            <td>
+                {% if carrera.image %}
+                    <img src="{{ carrera.image.url }}"width="50">
+                {% else %}
+                    <span class="no-image">Sin imagen</span>
+                {% endif %}
+            </td>
+            <td>{{ carrera.state }}</td>
+            <td class="actions">
+                <a href="{% url 'editar_carrera' carrera.id %}">Editar</a>
+                <a href="{% url 'eliminar_carrera' carrera.id %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
